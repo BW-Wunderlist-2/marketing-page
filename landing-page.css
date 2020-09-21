@@ -59,7 +59,7 @@ h1 {
 	top: 3.5%
 }
 
-/* landing section styles*/
+/* landing section General styles*/
 
 #landing-background {
 	background-image: url(img/desk2.jpg);
@@ -112,10 +112,23 @@ h1 {
 	font-size: 1.5rem;
 	display: flex;
 	justify-content: space-around;
-	width: 60%;
+	width: 70%;
 	margin-top: 6%;
 }
 
-nav span {
+#landing-background .text-container nav span {
 	border-right: 2px solid rgb(100,100,100);
+}
+#landing-background .text-container nav a {
+	text-decoration: none;
+	color: rgb(100,100,100);
+}
+
+/*About section General Styles*/
+
+/*About header styles*/
+
+.about-header {
+	display:flex;
+	
 }
