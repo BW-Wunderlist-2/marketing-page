@@ -46,14 +46,19 @@ blockquote, q {
 
 /*--------General Styles--------------------------------------------------------------------------*/
 
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
 body {
-	font-size: 62.5%;
+
 	font-family: 'Exo', sans-serif;
-	color: rgb(100,100,100);
-	box-sizing: border-box;
+    color: rgb(100,100,100);
+    font-size: 2.4;
 }
 h1 {
-	font-size: 5rem;
+	font-size: 7.2rem;
 	position: relative;
 	top: 3.5%
 }
@@ -65,11 +70,11 @@ nav span {
 /*About section General Styles---------------------------------------------*/
 
 #about-content {
-	font-size: 1rem;
+	font-size: 2.4rem;
 }
 
 #about-content h2 {
-	font-size: 2.2rem;
+	font-size: 3.6rem;
 }
 
 /*About header styles*/
@@ -95,7 +100,6 @@ nav span {
 
 }
 .about-header nav a{
-	font-size: 1.4rem;
 	text-decoration: none;
 	color: rgb(100,100,100);
 	vertical-align: middle;
@@ -107,7 +111,7 @@ nav span {
 
 .about-section-1 {
 	text-align:center;
-	height: 80vh;
+	height: 90vh;
 	min-height: 600px;
 }
 
@@ -122,14 +126,11 @@ nav span {
 	height: 50%;
 	background: #C13717;
 	color: rgb(220,220,220);
-	padding: 0 10%;
-	/* display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-evenly; */
+	padding: 3% 10% 0 10%;
 }
 
 .about-statement h2 {
-	padding: 5% 0;
+	padding-bottom:20px;
 }
 
 /*about section 2 styles*/
@@ -137,7 +138,6 @@ nav span {
 .about-section-2 {
 	display: flex;
 	flex-flow: row wrap;
-	/* height: 100vh; */
 	justify-content: space-evenly;
 	margin-bottom: 5%;
 }
@@ -145,7 +145,6 @@ nav span {
 .person {
 	width: 33%;
 	margin: 1% 5%;
-	/* border: 1px solid red; */
 }
 
 .person img {
@@ -158,4 +157,47 @@ nav span {
 footer {
 	height: 15vh;
 	background: #C13717;
+}
+
+@media (max-width: 600px) {
+    .about-section-2 {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .person {
+        width: 70%;
+        margin-bottom: 10%;
+    }
+    .about-header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .about-header nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .about-header nav a {
+        margin: 1.5% 0;
+    }
+
+    .about-section-1 {
+        height: 100%;
+    }
+
+    .about-greeting {
+        margin: 5%;
+    }
+    .about-statement {
+        margin-bottom: 10%;
+    }
+    .about-statement p{
+        padding-bottom: 10%;
+    }
+
+
 }
