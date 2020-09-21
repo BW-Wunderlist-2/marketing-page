@@ -59,6 +59,10 @@ h1 {
 	top: 3.5%
 }
 
+nav span {
+	border-right: 2px solid rgb(100,100,100);
+}
+
 /* landing section General styles*/
 
 #landing-background {
@@ -69,7 +73,7 @@ h1 {
 	display: flex;
 }
 
-.text-container {
+.landing-text-container {
 	margin:10% 0 0 8%;
 }
 
@@ -94,7 +98,7 @@ h1 {
 
 /*landing section button*/
 
-#landing-background .text-container button {
+#landing-background .landing-text-container button {
 	font-family: 'Exo', sans-serif;
 	margin: 2.5% 0;
 	background: #C13717;
@@ -108,7 +112,7 @@ h1 {
 
 /*landing section nav*/
 
-#landing-background .text-container nav {
+#landing-background .landing-text-container nav {
 	font-size: 1.5rem;
 	display: flex;
 	justify-content: space-around;
@@ -116,19 +120,48 @@ h1 {
 	margin-top: 6%;
 }
 
-#landing-background .text-container nav span {
-	border-right: 2px solid rgb(100,100,100);
-}
-#landing-background .text-container nav a {
+#landing-background .landing-text-container nav a {
 	text-decoration: none;
 	color: rgb(100,100,100);
 }
 
-/*About section General Styles*/
+/*About section General Styles---------------------------------------------*/
+
+#about-content {
+	font-size: 1rem;
+}
+
+#about-content h2 {
+	font-size: 2.2rem;
+}
 
 /*About header styles*/
 
 .about-header {
 	display:flex;
-	
+	justify-content: space-between;
+	height: 20vh;
 }
+
+.logo {
+	height: 90%;
+	max-height: 150px;
+}
+
+.about-header nav {
+	width: 450px;
+	display: flex;
+	justify-content: space-around;
+	height: 22%;
+	margin: 20px 2% 0 0;
+
+}
+.about-header nav a{
+	font-size: 1.4rem;
+	text-decoration: none;
+	color: rgb(100,100,100);
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+}
+
