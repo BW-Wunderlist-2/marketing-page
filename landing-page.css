@@ -128,3 +128,35 @@ nav span {
 	color: rgb(100,100,100);
 }
 
+@media (max-width: 600px) {
+
+	#landing-background {
+		width: 100%;
+		/* border: 1px solid red; */
+	}
+	.landing-text-container {
+		margin: 0%;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		width: 100%;
+	}
+	.text-logo {
+	}
+	.text-logo img {
+		height: 90%;
+	}
+	#landing-background .landing-text-container nav {
+		flex-flow: column;
+		align-items: center;
+		/* border: 1px solid red; */
+	}
+	#landing-background .landing-text-container nav a {
+		margin: 2% 0;
+		/* border: 1px solid red; */
+	}
+	#landing-background .landing-text-container button {
+		margin: 0 16%;
+	}
+
+}
