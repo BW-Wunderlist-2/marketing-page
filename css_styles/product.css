@@ -154,3 +154,51 @@ footer {
 footer a {
     color: white;
 }
+
+/**************Tablet Styles**********************/
+@media (max-width: 800px) {
+    .logo {
+        width: 20%;
+    }
+}
+
+/****************Phone Styles******************/
+@media (max-width: 600px) {
+    .logo {
+        width: 40%;
+    }
+    
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .line {
+        border: none;
+    }
+
+    .product-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission {
+        text-align: center;
+        padding: 5%;
+    }
+}
+
+@media (max-width: 500px) {
+    .tagline h3 {
+        font-size: 3rem;
+    }
+
+    .tagline h1 {
+        font-size: 5rem;
+    }
+
+    
+}

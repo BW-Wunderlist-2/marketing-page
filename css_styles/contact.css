@@ -135,3 +135,47 @@ footer {
 footer p {
     color: white;
 }
+
+/***************Tablet Styles******************/
+@media (max-width: 1000px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .form {
+        padding-top: 5%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 40%;
+    }
+    
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .line {
+        border: none;
+    }
+
+    h1 {
+        font-size: 6.0rem;
+    }
+
+    .contact {
+        font-size: 2.4rem;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    
+}
