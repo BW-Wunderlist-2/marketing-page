@@ -194,3 +194,29 @@ nav span {
 }
 
 /*about section 2 styles*/
+
+.about-section-2 {
+	display: flex;
+	flex-flow: row wrap;
+	/* height: 100vh; */
+	justify-content: space-evenly;
+	margin-bottom: 5%;
+}
+
+.person {
+	width: 33%;
+	margin: 1% 5%;
+	/* border: 1px solid red; */
+}
+
+.person img {
+	width: 100%;
+	border-radius: 5%;
+}
+
+/*about footer styles*/
+
+footer {
+	height: 15vh;
+	background: #C13717;
+}
