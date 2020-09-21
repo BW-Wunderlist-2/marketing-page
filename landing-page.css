@@ -165,3 +165,32 @@ nav span {
 	align-items: center;
 }
 
+/*about section 1 styles*/
+
+.about-section-1 {
+	text-align:center;
+	height: 80vh;
+}
+
+.about-greeting {
+	height: 40%;
+}
+.about-greeting h1 {
+	color: #C13717;
+}
+
+.about-statement {
+	height: 50%;
+	background: #C13717;
+	color: rgb(220,220,220);
+	padding: 0 10%;
+	/* display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly; */
+}
+
+.about-statement h2 {
+	padding: 5% 0;
+}
+
+/*about section 2 styles*/
