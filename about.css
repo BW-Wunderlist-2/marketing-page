@@ -43,7 +43,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 blockquote, q {
 	quotes: "" "";
     }
-    
 
 /*--------General Styles--------------------------------------------------------------------------*/
 
@@ -63,65 +62,100 @@ nav span {
 	border-right: 2px solid rgb(100,100,100);
 }
 
-/* landing section General styles*/
+/*About section General Styles---------------------------------------------*/
 
-#landing-background {
-	background-image: url(img/desk2.jpg);
-	height: 100vh;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
+#about-content {
+	font-size: 1rem;
 }
 
-.landing-text-container {
-	margin:10% 0 0 8%;
-}
-
-.text-logo {
-	display: flex;
-	height: 15%;
-	align-items: center;
-	flex-wrap: nowrap;
-	box-sizing: content-box;
-}
-.text-logo h2 {
+#about-content h2 {
 	font-size: 2.2rem;
-	padding-top: 2.5%;
-	padding-left: 1%;
-}
-.text-logo img {
-	height: 100%;
-	position: relative;
-	right: 4%;
-	
 }
 
-/*landing section button*/
+/*About header styles*/
 
-#landing-background .landing-text-container button {
-	font-family: 'Exo', sans-serif;
-	margin: 2.5% 0;
-	background: #C13717;
-	border-radius: 8%; 
-	font-size: 1.6rem;
-	color: rgb(220,220,220);
-	padding: 1% 1.5%;
-	border:#C13717;
-	box-shadow:3px 3px rgb(92, 39, 17);
+.about-header {
+	display:flex;
+	justify-content: space-between;
+	height: 20vh;
+	min-height: 100px;
 }
 
-/*landing section nav*/
+.logo {
+	height: 50%;
+	max-height: 150px;
+}
 
-#landing-background .landing-text-container nav {
-	font-size: 1.5rem;
+.about-header nav {
+	width: 450px;
 	display: flex;
 	justify-content: space-around;
-	width: 70%;
-	margin-top: 6%;
-}
+	height: 22%;
+	margin: 20px 2% 0 0;
 
-#landing-background .landing-text-container nav a {
+}
+.about-header nav a{
+	font-size: 1.4rem;
 	text-decoration: none;
 	color: rgb(100,100,100);
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
 }
 
+/*about section 1 styles*/
+
+.about-section-1 {
+	text-align:center;
+	height: 80vh;
+	min-height: 600px;
+}
+
+.about-greeting {
+	height: 40%;
+}
+.about-greeting h1 {
+	color: #C13717;
+}
+
+.about-statement {
+	height: 50%;
+	background: #C13717;
+	color: rgb(220,220,220);
+	padding: 0 10%;
+	/* display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly; */
+}
+
+.about-statement h2 {
+	padding: 5% 0;
+}
+
+/*about section 2 styles*/
+
+.about-section-2 {
+	display: flex;
+	flex-flow: row wrap;
+	/* height: 100vh; */
+	justify-content: space-evenly;
+	margin-bottom: 5%;
+}
+
+.person {
+	width: 33%;
+	margin: 1% 5%;
+	/* border: 1px solid red; */
+}
+
+.person img {
+	width: 100%;
+	border-radius: 5%;
+}
+
+/*about footer styles*/
+
+footer {
+	height: 15vh;
+	background: #C13717;
+}
