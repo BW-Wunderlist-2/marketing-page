@@ -97,6 +97,7 @@ nav a {
 
 .tagline h3 {
     font-size: 3.6rem;
+    color: #5b5a59;
 }
 
 .tagline h1 {
@@ -106,7 +107,7 @@ nav a {
 
 .mission {
     padding: 5% 20%;
-    background-color: #c12717;
+    background-color: #c13717;
     color: white;
 }
 
@@ -114,4 +115,33 @@ nav a {
     text-align: center;
     font-size: 3.6rem;
     padding: 2%;
+}
+
+/***************Features Styles***********************/
+.product-features {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7%;
+}
+
+.feature {
+    width: 50%;
+    text-align: center;
+}
+
+.feature h4 {
+    color: #c13717;
+    font-size: 3.6rem;
+    
+}
+
+/******************Footer Styles******************/
+footer {
+    text-align: center;
+    padding: 5%;
+    background-color: #c13717;
+}
+
+footer a {
+    color: white;
 }
