@@ -88,3 +88,43 @@ nav a {
 .line {
     border-right: 2px solid #5b5a59;
 }
+
+/******************Section Styles*****************/
+.heading {
+    text-align: center;
+    color: #c13717;
+    font-size: 7.2rem;
+    margin: 3%;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    width: 70%;
+    margin: 0 auto;
+    color: #c13717;
+    font-size: 3.6rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.4rem;
+}
+
+form input, form textarea {
+    border: 1px solid #c13717;
+    border-radius: 5px;
+}
+
+/****************Footer Styles*******************/
+footer {
+    text-align: center;
+    padding: 5%;
+    background-color: #c13717;
+}
+
+footer p {
+    color: white;
+}
