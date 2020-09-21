@@ -100,11 +100,16 @@ nav a {
 .contact {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 5%;
     width: 70%;
     margin: 0 auto;
     color: #c13717;
     font-size: 3.6rem;
+}
+
+.form {
+    width: 40%;
 }
 
 form {
@@ -116,6 +121,8 @@ form {
 form input, form textarea {
     border: 1px solid #c13717;
     border-radius: 5px;
+    padding: 2%;
+    margin: 2% 0;
 }
 
 /****************Footer Styles*******************/
