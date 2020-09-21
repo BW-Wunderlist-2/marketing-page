@@ -125,8 +125,17 @@ nav a {
 }
 
 .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     width: 50%;
     text-align: center;
+    padding: 5% 0;
+}
+
+.feature img {
+    width: 16%;
 }
 
 .feature h4 {
