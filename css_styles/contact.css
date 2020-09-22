@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******************End Reset******************/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Exo", "sans-serif";
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+/********************Header Styles******************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5b5a59;
+    padding: 0 5%;
+}
+
+.line {
+    border-right: 2px solid #5b5a59;
+}
+
+/******************Section Styles*****************/
+.heading {
+    text-align: center;
+    color: #c13717;
+    font-size: 7.2rem;
+    margin: 3%;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    width: 70%;
+    margin: 0 auto;
+    color: #c13717;
+    font-size: 3.6rem;
+}
+
+.form {
+    width: 40%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.4rem;
+}
+
+form input, form textarea {
+    border: 1px solid #c13717;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2% 0;
+}
+
+/****************Footer Styles*******************/
+footer {
+    text-align: center;
+    padding: 5%;
+    background-color: #c13717;
+}
+
+footer p {
+    color: white;
+}
+
+/***************Tablet Styles******************/
+@media (max-width: 1000px) {
+    
+    .contact {
+        flex-direction: column;
+    }
+
+    .form {
+        padding-top: 5%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 80%;
+    }
+    
+    header {
+        flex-direction: column;
+    }
+
+    header a {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .line {
+        border: none;
+    }
+
+    h1 {
+        font-size: 6.0rem;
+    }
+
+    .contact {
+        font-size: 2.4rem;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    
+}
