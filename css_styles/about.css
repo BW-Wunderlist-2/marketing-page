@@ -43,9 +43,9 @@ blockquote:before, blockquote:after, q:before, q:after {
 blockquote, q {
 	quotes: "" "";
     }
-    
 
 /*--------General Styles--------------------------------------------------------------------------*/
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -54,8 +54,8 @@ html {
 body {
 
 	font-family: 'Exo', sans-serif;
-	color: rgb(100,100,100);
-	font-size: 2.4rem;
+    color: rgb(100,100,100);
+    font-size: 2.4;
 }
 h1 {
 	font-size: 7.2rem;
@@ -67,96 +67,133 @@ nav span {
 	border-right: 2px solid rgb(100,100,100);
 }
 
-/* landing section General styles*/
+/*About section General Styles---------------------------------------------*/
 
-#landing-background {
-	background-image: url(img/desk2.jpg);
-	height: 100vh;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-}
-
-.landing-text-container {
-	margin:10% 0 0 8%;
-}
-
-.text-logo {
-	display: flex;
-	height: 15%;
-	align-items: center;
-	flex-wrap: nowrap;
-	box-sizing: content-box;
-}
-.text-logo h2 {
-	font-size: 3.6rem;
-	padding-top: 2.5%;
-	padding-left: 1%;
-}
-.text-logo img {
-	height: 100%;
-	position: relative;
-	right: 4%;
-	
-}
-
-/*landing section button*/
-
-#landing-background .landing-text-container button {
-	font-family: 'Exo', sans-serif;
-	margin: 2.5% 0;
-	background: #C13717;
-	border-radius: 8%; 
+#about-content {
 	font-size: 2.4rem;
-	color: rgb(220,220,220);
-	padding: 1% 1.5%;
-	border:#C13717;
-	box-shadow:3px 3px rgb(92, 39, 17);
+	line-height: 1.5;
 }
 
-/*landing section nav*/
+#about-content h2 {
+	font-size: 3.6rem;
+}
 
-#landing-background .landing-text-container nav {
+/*About header styles*/
+
+.about-header {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 50%;
+}
+
+.about-header nav {
 	display: flex;
-	justify-content: space-around;
-	width: 70%;
-	margin-top: 6%;
-}
+	justify-content: flex-end;
+	align-items: center;
+	padding: 2%;
 
-#landing-background .landing-text-container nav a {
+}
+.about-header nav a{
 	text-decoration: none;
 	color: rgb(100,100,100);
+	padding: 0 5%;
+}
+.line {
+    border-right: 2px solid #5b5a59;
+}
+
+/*about section 1 styles*/
+
+.about-section-1 {
+	text-align:center;
+}
+
+.about-greeting {
+	padding: 7%;
+
+}
+.about-greeting h1 {
+	color: #C13717;
+}
+
+.about-statement {
+	background: #C13717;
+	color: rgb(220,220,220);
+	padding: 5% 20%;
+	margin-bottom: 5%;
+}
+
+.about-statement h2 {
+	padding-bottom:20px;
+}
+
+/*about section 2 styles*/
+
+.about-section-2 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	margin-bottom: 5%;
+}
+
+.person {
+	width: 33%;
+	margin: 1% 5%;
+}
+
+.person img {
+	width: 100%;
+	border-radius: 5%;
+}
+
+/*about footer styles*/
+
+footer {
+	height: 15vh;
+	background: #C13717;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer a{
+	color: rgb(220,220,220);
+	text-decoration: none;
 }
 
 @media (max-width: 600px) {
+	.about-greeting h1 {
+		font-size: 5rem;
+	}
+	#about-content h2 {
+		font-size: 3rem;
+	}
+	.logo {
+		width: 80%;
+	}
+	.line {
+		border: none;
+	}
+    .about-section-2 {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .person {
+        width: 70%;
+        margin-bottom: 10%;
+    }
+    .about-header{
+        flex-direction: column;
+	}
+	.about-header a {
+		text-align: center;
+	}
 
-	#landing-background {
-		width: 100%;
-		/* border: 1px solid red; */
-	}
-	.landing-text-container {
-		margin: 0%;
-		display: flex;
-		flex-flow: column nowrap;
-		align-items: center;
-		width: 100%;
-	}
-	.text-logo {
-	}
-	.text-logo img {
-		height: 90%;
-	}
-	#landing-background .landing-text-container nav {
-		flex-flow: column;
-		align-items: center;
-		/* border: 1px solid red; */
-	}
-	#landing-background .landing-text-container nav a {
-		margin: 2% 0;
-		/* border: 1px solid red; */
-	}
-	#landing-background .landing-text-container button {
-		margin: 0 16%;
+    .about-header nav {
+        flex-flow: column nowrap;
 	}
 
 }

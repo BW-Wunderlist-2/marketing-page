@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+/*--------------------Eric Meyer’s CSS Reset--------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+    }
+    
+
+/*--------General Styles--------------------------------------------------------------------------*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+
+	font-family: 'Exo', sans-serif;
+	color: rgb(100,100,100);
+	font-size: 2.4rem;
+	line-height: 1.5;
+}
+h1 {
+	font-size: 7.2rem;
+	position: relative;
+	top: 3.5%
+}
+
+nav span {
+	border-right: 2px solid rgb(100,100,100);
+}
+
+/* landing section General styles*/
+
+#landing-background {
+	background-image: url("/assets/desk2.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+
+.landing-text-container {
+	margin:10% 0 0 8%;
+}
+
+.text-logo {
+	display: flex;
+	height: 15%;
+	align-items: center;
+	flex-wrap: nowrap;
+	box-sizing: content-box;
+}
+.text-logo h2 {
+	font-size: 3.6rem;
+	padding-top: 2.5%;
+	padding-left: 1%;
+}
+.text-logo img {
+	height: 100%;
+	position: relative;
+	right: 4%;
+	
+}
+
+/*landing section button*/
+
+#landing-background .landing-text-container button {
+	font-family: 'Exo', sans-serif;
+	margin: 2.5% 0;
+	background: #C13717;
+	border-radius: 8%; 
+	font-size: 2.4rem;
+	color: rgb(220,220,220);
+	padding: 1% 1.5%;
+	border:#C13717;
+	box-shadow:3px 3px rgb(92, 39, 17);
+}
+
+/*landing section nav*/
+
+#landing-background .landing-text-container nav {
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	margin-top: 6%;
+}
+
+#landing-background .landing-text-container nav a {
+	text-decoration: none;
+	color: rgb(100,100,100);
+}
+
+@media (max-width: 600px) {
+
+	#landing-background {
+		width: 100%;
+
+	}
+	.landing-text-container {
+		margin: 0%;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		width: 100%;
+	}
+	.text-logo h2{
+		white-space: nowrap;
+	}
+	.text-logo img {
+		height: 90%;
+	}
+	#landing-background .landing-text-container nav {
+		flex-flow: column;
+		align-items: center;
+	}
+	#landing-background .landing-text-container nav a {
+		margin: 1% 0;
+	}
+	#landing-background .landing-text-container button {
+		margin: 0 16%;
+	}
+
+}
