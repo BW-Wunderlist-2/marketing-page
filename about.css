@@ -71,6 +71,7 @@ nav span {
 
 #about-content {
 	font-size: 2.4rem;
+	line-height: 1.5;
 }
 
 #about-content h2 {
@@ -82,51 +83,48 @@ nav span {
 .about-header {
 	display:flex;
 	justify-content: space-between;
-	height: 20vh;
-	min-height: 100px;
+	align-items: center;
 }
 
 .logo {
-	height: 50%;
-	max-height: 150px;
+	width: 50%;
 }
 
 .about-header nav {
-	width: 450px;
 	display: flex;
-	justify-content: space-around;
-	height: 22%;
-	margin: 20px 2% 0 0;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 2%;
 
 }
 .about-header nav a{
 	text-decoration: none;
 	color: rgb(100,100,100);
-	vertical-align: middle;
-	display: flex;
-	align-items: center;
+	padding: 0 5%;
+}
+.line {
+    border-right: 2px solid #5b5a59;
 }
 
 /*about section 1 styles*/
 
 .about-section-1 {
 	text-align:center;
-	height: 90vh;
-	min-height: 600px;
 }
 
 .about-greeting {
-	height: 40%;
+	padding: 7%;
+
 }
 .about-greeting h1 {
 	color: #C13717;
 }
 
 .about-statement {
-	height: 50%;
 	background: #C13717;
 	color: rgb(220,220,220);
-	padding: 3% 10% 0 10%;
+	padding: 5% 20%;
+	margin-bottom: 5%;
 }
 
 .about-statement h2 {
@@ -157,47 +155,45 @@ nav span {
 footer {
 	height: 15vh;
 	background: #C13717;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer a{
+	color: rgb(220,220,220);
+	text-decoration: none;
 }
 
 @media (max-width: 600px) {
+	.about-greeting h1 {
+		font-size: 5rem;
+	}
+	#about-content h2 {
+		font-size: 3rem;
+	}
+	.logo {
+		width: 80%;
+	}
+	.line {
+		border: none;
+	}
     .about-section-2 {
         flex-flow: column nowrap;
         align-items: center;
     }
-
     .person {
         width: 70%;
         margin-bottom: 10%;
     }
     .about-header{
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
+	}
+	.about-header a {
+		text-align: center;
+	}
 
     .about-header nav {
         flex-flow: column nowrap;
-        align-items: center;
-    }
-
-    .about-header nav a {
-        margin: 1.5% 0;
-    }
-
-    .about-section-1 {
-        height: 100%;
-    }
-
-    .about-greeting {
-        margin: 5%;
-    }
-    .about-statement {
-        margin-bottom: 10%;
-    }
-    .about-statement p{
-        padding-bottom: 10%;
-    }
-
+	}
 
 }
