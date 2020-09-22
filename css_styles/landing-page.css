@@ -71,7 +71,7 @@ nav span {
 /* landing section General styles*/
 
 #landing-background {
-	background-image: url(img/desk2.jpg);
+	background-image: url("/assets/desk2.jpg");
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
