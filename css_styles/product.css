@@ -151,6 +151,7 @@ nav a:hover {
     width: 50%;
     text-align: center;
     padding: 5% 0;
+    transition: 0.5s;
 }
 
 .feature:hover {
@@ -176,6 +177,7 @@ footer {
 
 footer a {
     color: white;
+    padding: 2%;
 }
 
 /****************Phone Styles******************/
