@@ -1,3 +1,4 @@
+/*Google Fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
 /*--------------------Eric Meyer’s CSS Reset--------------------------------------------------------------*/
@@ -45,7 +46,7 @@ blockquote, q {
     }
     
 
-/*--------General Styles--------------------------------------------------------------------------*/
+/*--------General Styles---------------------------------------------------------*/
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -83,7 +84,7 @@ nav span {
     }
 }
 
-/* landing section General styles*/
+/* landing-background styles*/
 
 #landing-background {
 	background-image: url("../assets/desk2.jpg");
@@ -93,6 +94,8 @@ nav span {
 	display: flex;
 }
 
+
+/*landing text container styles*/
 .landing-text-container {
 	margin:10% 0 0 8%;
 }
@@ -100,6 +103,9 @@ nav span {
 	animation: slideFade;
 	animation-duration: 1s;
 }
+
+
+/*text logo styles*/
 
 .text-logo {
 	display: flex;
@@ -163,12 +169,15 @@ nav span {
 	text-decoration: underline;
 }
 
+
+/*Phone media query*/
 @media (max-width: 600px) {
 
 	#landing-background {
 		width: 100%;
-
 	}
+
+	/*text container styles*/
 	.landing-text-container {
 		margin: 0%;
 		display: flex;
@@ -182,6 +191,8 @@ nav span {
 	.text-logo img {
 		height: 90%;
 	}
+
+	/*phone nav styles*/
 	#landing-background .landing-text-container nav {
 		flex-flow: column;
 		align-items: center;

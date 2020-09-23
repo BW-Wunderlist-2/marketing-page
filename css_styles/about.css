@@ -1,3 +1,4 @@
+/*Google Fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
 /*--------------------Eric Meyer’s CSS Reset--------------------------------------------------------------*/
@@ -65,6 +66,10 @@ h1 {
 
 nav span {
 	border-right: 2px solid rgb(100,100,100);
+}
+
+.bolded {
+	font-weight: bolder;
 }
 
 /*About section General Styles---------------------------------------------*/
@@ -164,6 +169,7 @@ nav span {
 	display:flex;
 	flex-flow: column nowrap;
 	align-items: center;
+	text-align: center;
 	width: 33%;
 	margin: 1% 5%;
 }
@@ -189,7 +195,11 @@ footer a{
 	padding: 2%;
 }
 
+/*Phone Media Query*/
+
 @media (max-width: 600px) {
+	/*General Styling for phones*/
+
 	.about-greeting h1 {
 		font-size: 5rem;
 	}
@@ -202,6 +212,19 @@ footer a{
 	.line {
 		border: none;
 	}
+	/*header styling for phones*/
+
+	.about-header{
+        flex-direction: column;
+	}
+	.about-header a {
+		text-align: center;
+	}
+    .about-header nav {
+        flex-flow: column nowrap;
+	}
+	/*section 2 styling for phones*/
+
     .about-section-2 {
         flex-flow: column nowrap;
         align-items: center;
@@ -210,15 +233,4 @@ footer a{
         width: 70%;
         margin-bottom: 10%;
     }
-    .about-header{
-        flex-direction: column;
-	}
-	.about-header a {
-		text-align: center;
-	}
-
-    .about-header nav {
-        flex-flow: column nowrap;
-	}
-
 }
