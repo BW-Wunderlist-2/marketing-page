@@ -68,6 +68,21 @@ nav span {
 	border-right: 2px solid rgb(100,100,100);
 }
 
+/*********************Animations********************/
+
+@keyframes slideFade {
+    from {
+        margin-left: 6%;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 0;
+		opacity: 1;
+		visibility: visible;
+    }
+}
+
 /* landing section General styles*/
 
 #landing-background {
@@ -81,6 +96,10 @@ nav span {
 .landing-text-container {
 	margin:10% 0 0 8%;
 }
+.landing-text-container h1 {
+	animation: slideFade;
+	animation-duration: 1s;
+}
 
 .text-logo {
 	display: flex;
@@ -88,6 +107,11 @@ nav span {
 	align-items: center;
 	flex-wrap: nowrap;
 	box-sizing: content-box;
+	visibility: hidden;
+	animation: slideFade;
+	animation-fill-mode: forwards;
+	animation-delay: .3s;
+	animation-duration: 1s;
 }
 .text-logo h2 {
 	font-size: 3.6rem;
