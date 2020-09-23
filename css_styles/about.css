@@ -78,6 +78,20 @@ nav span {
 	font-size: 3.6rem;
 }
 
+/*********************Animations********************/
+
+@keyframes slideFade {
+    from {
+        margin-left: 6%;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
 /*About header styles*/
 
 .about-header {
@@ -102,6 +116,11 @@ nav span {
 	color: rgb(100,100,100);
 	padding: 0 5%;
 }
+
+.about-header nav a:hover{
+	text-decoration: underline;
+}
+
 .line {
     border-right: 2px solid #5b5a59;
 }
@@ -114,7 +133,8 @@ nav span {
 
 .about-greeting {
 	padding: 7%;
-
+	animation-name: slideFade;
+    animation-duration: 1s;
 }
 .about-greeting h1 {
 	color: #C13717;
@@ -153,7 +173,7 @@ nav span {
 /*about footer styles*/
 
 footer {
-	height: 15vh;
+	padding: 4%;
 	background: #C13717;
 	display: flex;
 	align-items: center;
@@ -162,6 +182,7 @@ footer {
 footer a{
 	color: rgb(220,220,220);
 	text-decoration: none;
+	padding: 2%;
 }
 
 @media (max-width: 600px) {
