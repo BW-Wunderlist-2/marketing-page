@@ -115,6 +115,12 @@ nav span {
 	box-shadow:3px 3px rgb(92, 39, 17);
 }
 
+#landing-background .landing-text-container button:hover {
+	background: #d44e00;
+	color: rgb(240,240,240);
+	transition:background-color 0.5s, color 0.5s ;
+}
+
 /*landing section nav*/
 
 #landing-background .landing-text-container nav {
@@ -127,6 +133,10 @@ nav span {
 #landing-background .landing-text-container nav a {
 	text-decoration: none;
 	color: rgb(100,100,100);
+}
+
+#landing-background .landing-text-container nav a:hover {
+	text-decoration: underline;
 }
 
 @media (max-width: 600px) {
