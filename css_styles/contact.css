@@ -85,8 +85,24 @@ nav a {
     padding: 0 5%;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 .line {
     border-right: 2px solid #5b5a59;
+}
+/******************Animations*********************/
+@keyframes slideFade {
+    from {
+        margin-left: 9%;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 3%;
+        opacity: 1;
+    }
 }
 
 /******************Section Styles*****************/
@@ -95,6 +111,8 @@ nav a {
     color: #c13717;
     font-size: 7.2rem;
     margin: 3%;
+    animation-name: slideFade;
+    animation-duration: 1s;
 }
 
 .contact {
@@ -132,8 +150,9 @@ footer {
     background-color: #c13717;
 }
 
-footer p {
+footer a {
     color: white;
+    padding: 2%;
 }
 
 /***************Tablet Styles******************/
