@@ -161,13 +161,17 @@ nav span {
 }
 
 .person {
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: center;
 	width: 33%;
 	margin: 1% 5%;
 }
 
 .person img {
-	width: 100%;
+	width: 70%;
 	border-radius: 5%;
+	margin: 5%;
 }
 
 /*about footer styles*/
