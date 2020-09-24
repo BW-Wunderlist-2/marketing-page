@@ -143,6 +143,17 @@ form input, form textarea {
     margin: 2% 0;
 }
 
+button {
+    color: white;
+    background-color: #c13717;
+    padding: 2%;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    width: 25%;
+    align-self: flex-end;
+}
+
 /****************Footer Styles*******************/
 footer {
     text-align: center;
