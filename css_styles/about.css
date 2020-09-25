@@ -170,18 +170,23 @@ nav span {
 	flex-flow: column nowrap;
 	align-items: center;
 	text-align: center;
-	width: 33%;
-	margin: 1% 5%;
+	width: 20%;
+	padding: 2% 0 10% 0;
+	margin: 1% 10%;
+	border-radius: 5%;
+	box-shadow: 2px 2px 20px rgb(209, 209, 209);
+	/* border: 1px solid red;; */
 }
 
 .person img {
-	width: 70%;
+	width: 50%;
 	border-radius: 5%;
 	margin: 5%;
 }
 
 .person p:nth-child(3) {
 	font-size: 1.5rem;
+	padding: 1% 10%
 }
 
 /*about footer styles*/
